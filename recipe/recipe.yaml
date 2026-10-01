@@ -12,7 +12,7 @@ source:
   sha256: f282f3cf299ea980eb56830da140feff01e037995a256968d8d7c991426c7947
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -31,7 +31,7 @@ requirements:
     - llvmlite
     - numba
     - astropy-base >=3.2
-    - photutils >=1.7.0
+    - photutils-base >=1.7.0
     - astroquery >=0.4.8
     - coloredlogs
     - scikit-image >=0.20
